@@ -1,5 +1,5 @@
 from app import db
-import datetime
+from datetime import datetime
 
 
 class User(db.Model):
@@ -22,7 +22,7 @@ class User(db.Model):
 
 class Post(db.Model):
     id = db.Column(db.Integer,
-                   rimary_key=True)
+                   primary_key=True)
     body = db.Column(db.String(140))
     timestamp = db.Column(db.DateTime,
                           index=True,
